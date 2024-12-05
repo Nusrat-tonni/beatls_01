@@ -1,0 +1,139 @@
+::before{}
+::after{}
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+       /* padding use korle div r height width bere jay..se khetre box sizing use korte hobe */
+
+}
+@font-face{
+    font-family: "Oswald", sans-serif;;
+    src: url('/Oswald/Oswald-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family:'Open_Sans';
+    src: url('/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald';
+    font-weight: 700;
+}
+article,aside,figure,section,div,main,nav,footer,header{
+    display: block;
+}
+ul,ol{
+     margin: 0; /* e khetre 15px r moto margin thake,tai 0 korlam */
+    padding: 0;
+}
+li{
+    list-style-type: none;    /*list use korle automatic ekta dot ashe, oita jate na ashe */
+}
+a{
+    text-decoration: none;  /* for remove underline under text */
+    display: inline-block;   /* aita na dile se tar property gulo thik moto pay na */
+     transition: all linear .3s;   /*aita use korle hover .3s kaj dhore kaj kore */
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Oswald';
+}
+p{
+    font-family: 'Oswald';
+}
+a{
+    font-family: 'Open_Sans';
+    font-weight: 400;
+}
+.container{
+     width: 960px; 
+ 
+     margin: 0 auto; /* eta dile pura section ta ekdom majha majhi hole asbe */
+       border: 1px solid red;   
+}
+.row{
+    /* padding: 15px 0px; */
+    display:-ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.row div{
+    /* padding: 50px; */
+     /* border: 1px solid blue;  */
+}
+ .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10, .col-11,.col-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px; /* prottek ta column r vitore inner space    */
+    padding-right: 10px;
+}
+.col-1{
+    -ms-flex:0 0 8.333333%; /*  (100/12=8.333) flex r 3ta property ekhane declare kora ase..flex grow, flex shrink, flex basis(width)   */
+    flex:0 0 8.333333%;
+    max-width: 8.3333%;
+}
+.col-2{
+    -ms-flex:0 0 16.6666%; /* (100/6=16.6666)    */
+    flex:0 0 16.6666%;
+    max-width: 16.6666%;
+}
+.col-3{
+    -ms-flex:0 0 25%; /* (100/4=25)    */
+    flex:0 0 25%;
+    max-width: 25%;
+}
+.col-4{
+    -ms-flex:0 0 33.3333%; /* (100/3=33.33)    */
+    flex:0 0 33.3333%;
+    max-width: 33.3333%;
+}
+.col-5{
+    -ms-flex:0 0 41.6666%; /* (100/2.4=41.6666)    */
+    flex:0 0 41.6666%;
+    max-width: 41.6666%;
+}
+.col-6{
+    -ms-flex:0 0 50%; /* (100/2=50)    */
+    flex:0 0 50%;
+    max-width: 50%;
+}
+.col-7{
+    -ms-flex:0 0 58.33%; /* (100/1.7142=58.33) */
+    flex:0 0 58.33%;
+    max-width: 58.33%;
+}
+.col-8{
+    -ms-flex:0 0 66.66%; /* (100/1.5=66.66) */
+    flex:0 0 66.66%;
+    max-width: 66.66%;
+}
+.col-9{
+    -ms-flex:0 0 75%; /* (100/1.33=75.0018) */
+    flex:0 0 75%;
+    max-width: 75%;
+}
+.col-10{
+    -ms-flex:0 0 83.3333%; /* (100/1.2=83.3333) */
+    flex:0 0 83.3333%;
+    max-width: 83.3333%;
+}
+.col-11{
+    -ms-flex:0 0 83.3333%; /* (100/1.0909=91.7433) */
+    flex:0 0 83.3333%;
+    max-width: 83.3333%;
+}
+.col-12{
+    -ms-flex:0 0 100%; /* (100/1=100) */
+    flex:0 0 100%;
+    max-width: 100%;
+}
+
